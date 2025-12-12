@@ -10,5 +10,5 @@ SELECT COALESCE(
     (SELECT salary
     FROM Ranking
     WHERE new_rank>1
-    LIMIT 1)
+    LIMIT 1), NULL
 ) AS SecondHighestSalary;

@@ -14,5 +14,5 @@ SELECT d.name AS Department,
 FROM Department AS d
 LEFT JOIN RankedSalaries AS r
     ON d.id=r.departmentId
-WHERE r.new_rank <= 3
+WHERE r.new_rank <=3
 GROUP BY Department, Employee;
